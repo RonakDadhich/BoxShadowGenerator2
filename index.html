@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap cdn -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Fontawsome cdn -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+
+    <link rel="stylesheet" href="assets/css/atom-one-dark.min.css">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Box Shadow Generator</title>
+</head>
+<body>
+    <!-- ==========Box-Shadow-Starts========== -->
+    <h1>Box Shadow Generator</h1>
+        <div class="container">
+            <div class="row box-shadow-generator">
+                <div class="col-lg-6">
+                    <div class="controls">
+                        <div class="group">
+                            <h2>X Offset</h2>
+                            <input type="range" min="-50" max="50" value="0" step="1" class="control" id="x-value">
+                        </div>
+            
+                        <div class="group">
+                            <h2>Y Offset</h2>
+                            <input type="range" min="-50" max="50" value="0" step="1" class="control" id="y-value">
+                        </div>
+            
+                        <div class="group">
+                            <h2>Blur Radius</h2>
+                            <input type="range" min="0" max="50" value="6" step="1" class="control" id="blur">
+                        </div>
+            
+                        <div class="group">
+                            <h2>Spread Radius</h2>
+                            <input type="range" min="-50" max="50" value="6" step="1" class="control" id="spread">
+                        </div>
+            
+                        <div class="group">
+                            <h2>Opacity</h2>
+                            <input type="range" min="0" max="1" value="0.3" step="0.1" class="control" id="opacity">
+                        </div>
+            
+                        <div class="container bx-shadow-dta">
+                            <div class="group">
+                                <h2>Color</h2>
+                                <input type="color" class="control" id="color">
+                            </div>
+            
+                            <div class="group">
+                                <h2>Inset</h2>
+                                <input type="checkbox" class="control switch" checked="true" id="inset">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="result">
+                        <div class="box"></div>
+                        <div class="code">
+                            <pre>
+                                <code>box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);</code>
+                            </pre>
+                        </div>
+                        <button class="generate-code-btn">Generate Code</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- ==========Box-Shadow-Ends========== -->
+
+    <!-- Jquery cdn -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/highlight.min.js"></script>
+
+    <script>
+        hljs.highlightAll();
+    </script>
+
+    <!-- Custom js -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
