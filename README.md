@@ -1,2 +1,1 @@
-# BoxShadowGenerator2
-JAVASCRIPT PROJECT
+https://ronakdadhich.github.io/BoxShadowGenerator2/
